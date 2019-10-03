@@ -1,14 +1,10 @@
 # Setup
 import pandas as pd
-import numpy as np
 from future.builtins import next
 import os
 import csv
 import re
-import logging
-import optparse
 import dedupe
-from unidecode import unidecode
 
 
 df = pd.read_csv("",header=0,index_col=False)
