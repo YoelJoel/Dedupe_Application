@@ -10,7 +10,7 @@ import dedupe
 df = pd.read_csv("",header=0,index_col=False)
 df1 = pd.DataFrame(df)
 
-# Find postcodes which appear more than 3 times, to reduce data
+# Return postcodes which occur more than 3 times
 
 sub_df = df1[['Property Postcode','Property Address']]
 df_sum = sub_df.groupby('Property Postcode')\
