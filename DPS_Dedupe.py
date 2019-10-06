@@ -10,7 +10,7 @@ import dedupe
 df = pd.read_csv("",header=0,index_col=False)
 df1 = pd.DataFrame(df)
 
-# Return postcodes which occur more than 3 times
+# Return postcodes which occur 3 or more times
 
 sub_df = df1[['Property Postcode','Property Address']]
 df_sum = sub_df.groupby('Property Postcode')\
@@ -23,7 +23,7 @@ red_DPSTDD.to_csv(r'reduced data')
 
 input_file = "reduced data"
 output_file = "cluster data"
-settings_file = 'settings file'
+settings_file = "settings file"
 training_file = "labelled pairs"
 
 
