@@ -26,13 +26,10 @@ output_file = "cluster data"
 settings_file = 'settings file'
 training_file = "labelled pairs"
 
-# ## Setup
-
-
 
 def NormalizeAddress(addressline):
     """
-    
+    Reduce address data to text a numeric types only, while conserving spaces between words and numbers
     """
     addressline = re.sub(',',' ', addressline)
     addressline = re.sub('/',' ', addressline)
